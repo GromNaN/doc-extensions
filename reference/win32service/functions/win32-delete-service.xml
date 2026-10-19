@@ -11,7 +11,7 @@
   <methodsynopsis>
    <type>void</type><methodname>win32_delete_service</methodname>
    <methodparam><type>string</type><parameter>servicename</parameter></methodparam>
-   <methodparam choice="opt"><type>string</type><parameter>machine</parameter><initializer>&null;</initializer></methodparam>
+   <methodparam choice="opt"><type>string</type><parameter>machine</parameter><initializer>&quot;&quot;</initializer></methodparam>
   </methodsynopsis>
 
   <simpara>
@@ -138,6 +138,7 @@ win32_delete_service('dummyphp');
   <para>
    <simplelist>
     <member><function>win32_create_service</function></member>
+    <member><function>win32_exists_service</function></member>
     <member><link linkend="win32service.constants.errors">Win32 Error Codes</link></member>
    </simplelist>
   </para>
